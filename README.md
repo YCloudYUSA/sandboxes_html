@@ -1,4 +1,4 @@
-# YMCA CodeShare Sandboxes landing page
+# YMCA Website Services Sandboxes landing page
 
 ## Source
 
@@ -20,7 +20,7 @@ https://drive.google.com/drive/folders/1j40bjO1l7fD7M6w3QEEcgkkLHZB7N8hn?usp=sha
 ```
 Sandbox
 
-Welcome to the YMCA CodeShare demo site! Compare the three themes currently offered on YMCA CodeShare and discover the range of
+Welcome to the YMCA Website Services demo site! Compare the three themes currently offered on YMCA Website Services and discover the range of
 capabilities across different installation levels of the platform. 
 ```
 
@@ -42,7 +42,7 @@ capabilities across different installation levels of the platform.
 
 ### Header
 
-The logo and "back to YMCA CodeShare.org" point to https://ycloud.y.org/open-y-association-websites/.
+The logo and "back to YMCA Website Services.org" point to https://ycloud.y.org/open-y-association-websites/.
 
 The logo is to be taken from openy.org. 
 
