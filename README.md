@@ -26,19 +26,19 @@ capabilities across different installation levels of the platform.
 
 ### Sandbox Domain Names
 
-- sandboxes.openy.org
+- sandboxes.y.org
 
-- sandbox-carnation-cus.openy.org
-- sandbox-carnation-ext.openy.org
-- sandbox-carnation-std.openy.org
+- sandbox-carnation-cus.y.org
+- sandbox-carnation-ext.y.org
+- sandbox-carnation-std.y.org
 
-- sandbox-lily-cus.openy.org
-- sandbox-lily-ext.openy.org
-- sandbox-lily-std.openy.org
+- sandbox-lily-cus.y.org
+- sandbox-lily-ext.y.org
+- sandbox-lily-std.y.org
 
-- sandbox-rose-cus.openy.org
-- sandbox-rose-ext.openy.org
-- sandbox-rose-std.openy.org
+- sandbox-rose-cus.y.org
+- sandbox-rose-ext.y.org
+- sandbox-rose-std.y.org
 
 ### Header
 
