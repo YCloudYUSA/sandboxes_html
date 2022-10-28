@@ -1,64 +1,64 @@
 {
   "gtmid": "GTM-PQTSN2P",
-  "title": "YMCA CodeShare Sandbox",
-  "description": "Welcome to the YMCA CodeShare demo site! Compare the three themes currently offered on YMCA CodeShare and discover the range of capabilities across different installation levels of the platform.",
-  "url": "https://sandboxes-d9.openy.org/",
+  "title": "YMCA Website Services Sandbox",
+  "description": "Welcome to the YMCA Website Services demo site! Compare the three themes currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
+  "url": "https://sandboxes-d9.y.org/",
   "header": "Sandbox",
-  "intro": "Welcome to the YMCA CodeShare demo site! Compare the three themes currently offered on YMCA CodeShare and discover the range of capabilities across different installation levels of the platform.",
+  "intro": "Welcome to the YMCA Website Services demo site! Compare the three themes currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
   "cards": [
     {
       "id": "rose-standard",
-      "link": "https://sandbox-rose-std-d9.openy.org/",
+      "link": "https://sandbox-rose-std-d9.y.org/",
       "title": "Rose: Standard install",
-      "description": "Standard-level YMCA CodeShare offers everything a YMCA Association needs for a comprehensive website. Rose offers sprawling site menu options and high accessibility for blind or low vision users."
+      "description": "Standard-level YMCA Website Services offers everything a YMCA Association needs for a comprehensive website. Rose offers sprawling site menu options and high accessibility for blind or low vision users."
     },
     {
       "id": "lily-standard",
-      "link": "https://sandbox-lily-std-d9.openy.org/",
+      "link": "https://sandbox-lily-std-d9.y.org/",
       "title": "Lily: Standard install",
-      "description": "Standard-level YMCA CodeShare offers everything a YMCA Association needs for a comprehensive website. Lily offers bold banner headings and eye-catching tiles to organize child page content."
+      "description": "Standard-level YMCA Website Services offers everything a YMCA Association needs for a comprehensive website. Lily offers bold banner headings and eye-catching tiles to organize child page content."
     },
     {
       "id": "carnation-standard",
-      "link": "https://sandbox-carnation-std-d9.openy.org/",
+      "link": "https://sandbox-carnation-std-d9.y.org/",
       "title": "Carnation: Standard install",
-      "description": "Standard-level YMCA CodeShare offers everything a YMCA Association needs for a comprehensive website. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
+      "description": "Standard-level YMCA Website Services offers everything a YMCA Association needs for a comprehensive website. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
     },
     {
       "id": "rose-extended",
-      "link": "https://sandbox-rose-ext-d9.openy.org/",
+      "link": "https://sandbox-rose-ext-d9.y.org/",
       "title": "Rose: Extended install",
-      "description": "Extended-level YMCA CodeShare is an option for large YMCA Associations who desire deep integrations with third party software and advanced feature. Rose offers sprawling site menu options and high accessibility levels for blind or low vision users."
+      "description": "Extended-level YMCA Website Services is an option for large YMCA Associations who desire deep integrations with third party software and advanced feature. Rose offers sprawling site menu options and high accessibility levels for blind or low vision users."
     },
     {
       "id": "lily-extended",
-      "link": "https://sandbox-lily-ext-d9.openy.org/",
+      "link": "https://sandbox-lily-ext-d9.y.org/",
       "title": "Lily: Extended install",
-      "description": "Extended-level YMCA CodeShare is an option for large YMCA Associations who desire deep integrations with third party software and advanced feature. Lily offers bold banner headings and eye-catching tiles to organize child page content."
+      "description": "Extended-level YMCA Website Services is an option for large YMCA Associations who desire deep integrations with third party software and advanced feature. Lily offers bold banner headings and eye-catching tiles to organize child page content."
     },
     {
       "id": "carnation-extended",
-      "link": "https://sandbox-carnation-ext-d9.openy.org/",
+      "link": "https://sandbox-carnation-ext-d9.y.org/",
       "title": "Carnation: Extended install",
-      "description": "Extended-level YMCA CodeShare is an option for large YMCA Associations who desire deep integrations with third party software and advanced features. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
+      "description": "Extended-level YMCA Website Services is an option for large YMCA Associations who desire deep integrations with third party software and advanced features. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
     },
     {
       "id": "rose-custom",
-      "link": "https://sandbox-rose-cus-d9.openy.org/",
+      "link": "https://sandbox-rose-cus-d9.y.org/",
       "title": "Rose: Custom install",
-      "description": "Custom-level YMCA CodeShare is for developers to review all possible features, including experimental ones, available in YMCA CodeShare. Rose offers sprawling site menu options and high accessibility levels for blind or low vision users."
+      "description": "Custom-level YMCA Website Services is for developers to review all possible features, including experimental ones, available in YMCA Website Services. Rose offers sprawling site menu options and high accessibility levels for blind or low vision users."
     },
     {
       "id": "lily-custom",
-      "link": "https://sandbox-lily-cus-d9.openy.org/",
+      "link": "https://sandbox-lily-cus-d9.y.org/",
       "title": "Lily: Custom install",
-      "description": "Custom-level YMCA CodeShare is for developers to review all possible features, including experimental ones, available in YMCA CodeShare. Lily offers bold banner headings and eye-catching tiles to organize child page content."
+      "description": "Custom-level YMCA Website Services is for developers to review all possible features, including experimental ones, available in YMCA Website Services. Lily offers bold banner headings and eye-catching tiles to organize child page content."
     },
     {
       "id": "carnation-custom",
-      "link": "https://sandbox-carnation-cus-d9.openy.org/",
+      "link": "https://sandbox-carnation-cus-d9.y.org/",
       "title": "Carnation: Custom install",
-      "description": "Custom-level YMCA CodeShare is for developers to review all possible features, including experimental ones, available in YMCA CodeShare.. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
+      "description": "Custom-level YMCA Website Services is for developers to review all possible features, including experimental ones, available in YMCA Website Services.. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
     }
   ]
 }

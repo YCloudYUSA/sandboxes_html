@@ -2,7 +2,7 @@
   "name": "openy-sandbox",
   "version": "1.0.0",
   "private": true,
-  "description": "The landing page for the YMCA CodeShare sandboxes website.",
+  "description": "The landing page for the YMCA Website Services sandboxes website.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
