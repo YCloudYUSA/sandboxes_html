@@ -1,4 +1,4 @@
-# YMCA CodeShare Sandboxes landing page
+# YMCA Website Services Sandboxes landing page
 
 ## Source
 
@@ -20,29 +20,29 @@ https://drive.google.com/drive/folders/1j40bjO1l7fD7M6w3QEEcgkkLHZB7N8hn?usp=sha
 ```
 Sandbox
 
-Welcome to the YMCA CodeShare demo site! Compare the three themes currently offered on YMCA CodeShare and discover the range of
+Welcome to the YMCA Website Services demo site! Compare the three themes currently offered on YMCA Website Services and discover the range of
 capabilities across different installation levels of the platform. 
 ```
 
 ### Sandbox Domain Names
 
-- sandboxes.openy.org
+- sandboxes.y.org
 
-- sandbox-carnation-cus.openy.org
-- sandbox-carnation-ext.openy.org
-- sandbox-carnation-std.openy.org
+- sandbox-carnation-cus.y.org
+- sandbox-carnation-ext.y.org
+- sandbox-carnation-std.y.org
 
-- sandbox-lily-cus.openy.org
-- sandbox-lily-ext.openy.org
-- sandbox-lily-std.openy.org
+- sandbox-lily-cus.y.org
+- sandbox-lily-ext.y.org
+- sandbox-lily-std.y.org
 
-- sandbox-rose-cus.openy.org
-- sandbox-rose-ext.openy.org
-- sandbox-rose-std.openy.org
+- sandbox-rose-cus.y.org
+- sandbox-rose-ext.y.org
+- sandbox-rose-std.y.org
 
 ### Header
 
-The logo and "back to YMCA CodeShare.org" point to https://ycloud.y.org/open-y-association-websites/.
+The logo and "back to YMCA Website Services.org" point to https://ycloud.y.org/open-y-association-websites/.
 
 The logo is to be taken from openy.org. 
 
