@@ -1,23 +1,11 @@
 {
   "gtmid": "GTM-PQTSN2P",
   "title": "Membership Framework YMCA Website Services Sandboxes",
-  "description": "Welcome to the Membership Framework demo site! Compare the three themes currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
+  "description": "Welcome to the Membership Framework demo site! Compare currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
   "url": "https://membership-framework-sandboxes.y.org/",
   "header": "Membership Framework YMCA Website Services Sandbox",
-  "intro": "Welcome to the Membership Framework YMCA Website Services demo site! Compare the three themes currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
+  "intro": "Welcome to the Membership Framework YMCA Website Services demo site! Compare  currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
   "cards": [
-    {
-      "id": "rose-standard",
-      "link": "https://sandbox-rose-std-membership-framework.y.org",
-      "title": "Rose: Standard Membership Framework install",
-      "description": "Membership Framework on Standard-level YMCA Website Services offers everything a YMCA Association needs for a comprehensive website. Rose offers sprawling site menu options and high accessibility for blind or low vision users."
-    },
-    {
-      "id": "lily-standard",
-      "link": "https://sandbox-lily-std-membership-framework.y.org",
-      "title": "Lily: Standard Membership Framework install",
-      "description": "Membership Framework on Standard-level YMCA Website Services offers everything a YMCA Association needs for a comprehensive website. Lily offers bold banner headings and eye-catching tiles to organize child page content."
-    },
     {
       "id": "carnation-standard",
       "link": "https://sandbox-carnation-std-membership-framework.y.org",
