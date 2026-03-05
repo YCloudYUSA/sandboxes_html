@@ -37,12 +37,9 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header id="header" class="w-full">
-        <nav class="h-[50px] lg:h-[100px] bg-black px-[5px] sm:px-0 pr-5 sm:pr-0 relative transition-[height] duration-150">
+        <nav class="h-[50px] lg:h-[100px] bg-white border-b border-brand-light-grey px-[5px] sm:px-0 pr-5 sm:pr-0 relative transition-[height] duration-150">
             <div class="mx-auto max-w-[1200px] px-[5px] sm:px-[35px] lg:px-[45px] h-full flex items-center">
-                <a class="navbar-brand bg-contain bg-no-repeat text-[0px] leading-[0] pt-[25px] lg:pt-[50px] overflow-hidden absolute indent-[-9999px] w-[85px] lg:w-[169px] top-1/2 -translate-y-1/2"
-                   href="https://ycloud.y.org/open-y-association-websites/"
-                   title="YMCA Website Services">YMCA Website Services</a>
-                <a class="ml-auto text-brand-red hover:text-white font-quicksand text-xs lg:text-sm font-medium -translate-y-[5px] lg:translate-y-0 transition-colors duration-150"
+<a class="ml-auto text-brand-teal-dark hover:text-brand-teal font-quicksand text-xs lg:text-sm font-medium -translate-y-[5px] lg:translate-y-0 transition-colors duration-150"
                    href="https://ycloud.y.org/open-y-association-websites/"
                    title="YMCA Website Services">
                     Back to YMCA Website Services.org
@@ -51,14 +48,17 @@
         </nav>
     </header>
 
-    <main class="mx-auto max-w-[1200px] px-[5px] sm:px-[35px] lg:px-[45px] flex-1">
-        {% block content %}{% endblock %}
+    <main class="flex-1">
+        {% block banner %}{% endblock %}
+        <div class="mx-auto max-w-[1200px] px-[5px] sm:px-[35px] lg:px-[45px]">
+            {% block content %}{% endblock %}
+        </div>
     </main>
 
     <footer>
-        <div class="bg-black text-white text-center text-xs lg:text-sm py-3 transition-[font-size] duration-150">
+        <div class="bg-brand-teal-dark text-white text-center text-xs lg:text-sm py-3 transition-[font-size] duration-150">
             <div class="mx-auto max-w-[1200px] px-[5px] sm:px-[35px] lg:px-[45px]">
-                &copy; 2025 YMCA Website Services. All Rights reserved.
+                &copy; 2026 YMCA Website Services. All Rights reserved.
             </div>
         </div>
     </footer>

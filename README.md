@@ -1,28 +1,23 @@
 # YMCA Website Services Sandboxes landing page
 
+## Screenshots
+
+### Desktop
+![Desktop](screenshot-desktop.png)
+
+### Mobile
+![Mobile](screenshot-mobile.png)
+
 ## Source
 
-### Design wireframes
+### Design
 
-https://xd.adobe.com/view/4c680fc3-feba-4ad1-409f-09efedcd66ac-3a59/
-
-There are 3 variations:
-- Mobile Phone (MIN)
-- Mobile Tablet
-- Desktop (Fixed MAX)
-
-### Images
-
-https://drive.google.com/drive/folders/1j40bjO1l7fD7M6w3QEEcgkkLHZB7N8hn?usp=sharing
-
-### Page text
-
-```
-Sandbox
-
-Welcome to the YMCA Website Services demo site! Compare the three themes currently offered on YMCA Website Services and discover the range of
-capabilities across different installation levels of the platform.
-```
+Redesigned to match the Small Y (openy_carnation) theme with:
+- Teal color scheme (`#01a490` primary, `#006b6b` dark)
+- Ping-pong card layout (image + text alternating sides)
+- Hero banner with chevron arrow and gradient background
+- White header, teal footer
+- Rounded buttons and card corners
 
 ### Sandbox Domain Names
 
@@ -38,27 +33,23 @@ capabilities across different installation levels of the platform.
 
 ### Header
 
-The logo and "back to YMCA Website Services.org" point to https://ycloud.y.org/open-y-association-websites/.
-
-The logo is to be taken from openy.org.
+"Back to YMCA Website Services.org" points to https://ycloud.y.org/open-y-association-websites/.
 
 ### Fonts
 
-The used fonts:
+- Quicksand, regular and bold
+- Roboto, regular and medium
 
-- Quicksand, regular
-- Quicksand, bold
-- Roboto, regular
-- Roboto, medium
-
-The fonts are to be taken from Google fonts.
+Loaded from Google Fonts.
 
 ### Theme palette
 
-- black #000000
-- white #FFFFFF
-- red #F41938 (+ #D0343A for contrast with white)
-- light-grey #F2F2F2
+- teal `#01a490` (primary brand)
+- teal dark `#006b6b` (headings, footer, buttons)
+- blue `#0089d0` (accent, dividers, button hover)
+- dark gray `#2f2f2f` (body text)
+- light grey `#F2F2F2`
+- white `#FFFFFF`
 
 # Development
 
@@ -95,9 +86,9 @@ To preview production build:
 - `playwright.config.ts` — Playwright test configuration
 - `src/` — contains all the source files:
    - `layouts/base.njk` — the base HTML layout (head, header, footer)
-   - `pages/index.njk` — the main page content
-   - `components/card.njk` — card component template
-   - `styles/main.css` — Tailwind CSS imports, theme config, and custom card styles
+   - `pages/index.njk` — the main page content with hero banner
+   - `components/card.njk` — ping-pong card component template
+   - `styles/main.css` — Tailwind CSS imports, theme config, hero banner, and ping-pong card styles
    - `scripts/main.ts` — TypeScript entry point
    - `data/global.json` — page content data (auto-loaded by Vituum)
    - `assets/` — all images used in the page
@@ -113,10 +104,12 @@ Structure:
 - `title` — the page title, used in meta tags
 - `description` — the page description, used in meta tags
 - `url` — the URL where this page is hosted, used in meta tags
-- `header` — the content header
-- `intro` — the intro text
-- `cards` — the array of card objects:
-  - `id` — the card id, used as HTML `id` attribute and in CSS for background images
-  - `link` — a link to a sandbox website
-  - `title` — a card title
-  - `description` — a card body content, non-sanitized, can contain HTML markup
+- `header` — the content header (displayed in hero banner)
+- `intro` — the intro text (displayed in hero banner)
+- `sections` — array of section objects:
+  - `title` — section heading
+  - `cards` — array of card objects:
+    - `id` — the card id, used as HTML `id` attribute and in CSS for background images
+    - `link` — a link to a sandbox website
+    - `title` — a card title
+    - `description` — a card body content, non-sanitized, can contain HTML markup

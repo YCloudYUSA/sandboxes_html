@@ -4,47 +4,181 @@
 @source "../components";
 
 @theme {
-  --color-brand-red: #F41938;
-  --color-brand-red-dimmed: #D0343A;
+  --color-brand-teal: #01a490;
+  --color-brand-teal-dark: #006b6b;
+  --color-brand-blue: #0089d0;
   --color-brand-light-grey: #F2F2F2;
+  --color-dark-gray: #2f2f2f;
   --default-font-family: 'Roboto', sans-serif;
   --font-quicksand: 'Quicksand', sans-serif;
   --breakpoint-sm: 576px;
   --breakpoint-lg: 992px;
 }
 
-
-/* Card component */
-.sandbox-card {
-  display: block;
+/* Hero banner */
+.hero-banner {
+  background: linear-gradient(135deg, var(--color-brand-teal-dark) 0%, var(--color-brand-teal) 100%);
+  border-radius: 0 0 12px 12px;
   position: relative;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
-  transition: transform 150ms, box-shadow 150ms;
-  user-select: none;
-  -webkit-user-select: none;
-  width: 100%;
+  overflow: hidden;
+  padding: 40px 24px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 576px) {
-  .sandbox-card {
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-  }
-
-  .sandbox-card:hover,
-  .sandbox-card:focus {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    transform: scale(1.05);
+  .hero-banner {
+    padding: 50px 40px;
+    margin-bottom: 50px;
   }
 }
 
-/* Card header with lazy-load image animation */
-.sandbox-card-header {
-  height: 0;
+@media (min-width: 992px) {
+  .hero-banner {
+    padding: 60px 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.hero-banner-inner {
   position: relative;
-  padding-bottom: 50%;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+@media (min-width: 576px) {
+  .hero-banner-inner {
+    padding: 0 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-banner-inner {
+    padding: 0 45px;
+  }
+}
+
+.hero-banner-content {
+  max-width: 600px;
+}
+
+.hero-banner-chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.hero-banner-chevron svg {
+  height: 100%;
+  width: auto;
+}
+
+.hero-banner-chevron--left {
+  left: 0;
+  height: 100%;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .hero-banner-chevron--left {
+    display: block;
+  }
+}
+
+.hero-banner-chevron--right {
+  right: 2%;
+  height: 110%;
+}
+
+/* Ping Pong card layout */
+.ping-pong-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
   overflow: hidden;
-  border-top: 5px solid var(--color-brand-red);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
+  color: inherit;
+  transition: box-shadow 200ms, transform 200ms;
+}
+
+.ping-pong-card:hover,
+.ping-pong-card:focus {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 576px) {
+  .ping-pong-card {
+    flex-direction: row;
+    min-height: 280px;
+  }
+
+  .ping-pong-card--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Image side */
+.ping-pong-image {
+  flex: 1;
+  min-height: 200px;
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .ping-pong-image {
+    min-height: 280px;
+  }
+}
+
+/* Content side */
+.ping-pong-content {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .ping-pong-content {
+    padding: 40px;
+  }
+}
+
+/* Preview button */
+.ping-pong-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-brand-blue);
+  color: white;
+  font-family: var(--font-quicksand);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 150ms;
+  align-self: flex-start;
+}
+
+.ping-pong-card:hover .ping-pong-button,
+.ping-pong-card:focus .ping-pong-button {
+  background-color: var(--color-brand-teal-dark);
+}
+
+/* Card image with lazy-load animation */
+.sandbox-card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .sandbox-card-header::before,
@@ -106,43 +240,6 @@ body.ready .sandbox-card-header::after {
 #activity-finder .sandbox-card-header::before     { background-image: url('../assets/activity-finder-20.jpg'); }
 #activity-finder .sandbox-card-header::after      { background-image: url('../assets/activity-finder-700x350.jpg'); }
 
-/* Preview button */
-.sandbox-card-preview {
-  background-color: var(--color-brand-red-dimmed);
-  color: white;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: var(--font-quicksand);
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 18px;
-  padding-top: 18px;
-  padding-bottom: 19px;
-  transition: background-color 150ms, font-size 150ms;
-  width: 100%;
-}
-
-@media (min-width: 576px) {
-  .sandbox-card-preview {
-    bottom: 0;
-    position: absolute;
-  }
-}
-
-@media (min-width: 992px) {
-  .sandbox-card-preview {
-    font-size: 18px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-
-.sandbox-card:hover .sandbox-card-preview,
-.sandbox-card:focus .sandbox-card-preview {
-  background-color: var(--color-brand-red);
-}
-
 /* External link icon */
 .external-icon {
   display: inline-block;
@@ -157,11 +254,4 @@ body.ready .sandbox-card-header::after {
   line-height: 0;
   height: 14px;
   width: 14px;
-  transform: translateX(3px) translateY(2px) scale(1.2857);
-}
-
-@media (min-width: 992px) {
-  .external-icon::after {
-    transform: translateX(8px) translateY(0) scale(1.2857);
-  }
 }

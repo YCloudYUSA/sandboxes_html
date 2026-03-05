@@ -1,10 +1,12 @@
-<div class="flex">
-    <a class="sandbox-card" id="{{ card.id }}" href="{{ card.link }}" title="Preview {{ card.title }}" target="{{ card.id }}">
-        <header class="sandbox-card-header"></header>
-        <article class="px-[5px] sm:px-2.5 lg:px-[15px] sm:mb-[65px] lg:mb-[75px]">
-            <h2 class="text-black text-lg lg:text-2xl font-normal leading-relaxed my-[5px] sm:my-2.5 lg:my-[15px] transition-[margin,font-size] duration-150">{{ card.title }}</h2>
-            <p class="text-xs lg:text-sm leading-relaxed mb-[5px] sm:mb-2.5 lg:mb-[15px] transition-[margin-bottom] duration-150">{{ card.description | safe }}</p>
-        </article>
-        <div class="sandbox-card-preview">Preview <i class="external-icon"></i></div>
-    </a>
-</div>
+<a class="ping-pong-card group {{ 'ping-pong-card--reverse' if loop.index0 % 2 == 1 }}"
+   id="{{ card.id }}" href="{{ card.link }}" title="Preview {{ card.title }}" target="{{ card.id }}">
+    <div class="ping-pong-image">
+        <div class="sandbox-card-header"></div>
+    </div>
+    <div class="ping-pong-content">
+        <h3 class="font-quicksand text-brand-teal-dark text-2xl lg:text-3xl font-bold mb-3">{{ card.title }}</h3>
+        <div class="w-14 h-[3px] bg-brand-blue mb-5"></div>
+        <p class="text-dark-gray text-base lg:text-lg leading-relaxed mb-6">{{ card.description | safe }}</p>
+        <span class="ping-pong-button">Preview <i class="external-icon"></i></span>
+    </div>
+</a>
