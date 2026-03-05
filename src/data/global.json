@@ -1,10 +1,10 @@
 {
   "gtmid": "GTM-PQTSN2P",
   "title": "YMCA Website Services Sandbox",
-  "description": "Welcome to the YMCA Website Services demo site! Compare the three distro variations currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
+  "description": "Welcome to the YMCA Website Services demo site! Compare the themes and tools currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
   "url": "https://sandboxes.y.org/",
   "header": "Sandbox",
-  "intro": "Welcome to the YMCA Website Services demo site! Compare the three distro variations currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
+  "intro": "Welcome to the YMCA Website Services demo site! Compare the themes and tools currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
   "sections": [
     {
       "title": "Featured Sandboxes",
