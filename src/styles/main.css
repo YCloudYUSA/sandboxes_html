@@ -96,6 +96,9 @@ body.ready .sandbox-card-header::after {
 #lily-extended .sandbox-card-header::after { background-image: url('../assets/lily-extended-700x350.jpg'); }
 #lily-custom .sandbox-card-header::after   { background-image: url('../assets/lily-custom-700x350.jpg'); }
 
+#small-y .sandbox-card-header::before              { background-image: url('../assets/small-y-20.jpg'); }
+#small-y .sandbox-card-header::after               { background-image: url('../assets/small-y-700x350.jpg'); }
+
 #virtual-y .sandbox-card-header::before           { background-image: url('../assets/carnation-standard-20.jpg'); }
 #virtual-y .sandbox-card-header::after            { background-image: url('../assets/carnation-standard-700x350.jpg'); }
 #membership-builder .sandbox-card-header::before  { background-image: url('../assets/membership-builder-20.jpg'); }

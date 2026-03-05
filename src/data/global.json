@@ -7,6 +7,12 @@
   "intro": "Welcome to the YMCA Website Services demo site! Compare the three distro variations currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
   "cards": [
     {
+      "id": "small-y",
+      "link": "https://small-y-stable.y.org/",
+      "title": "Small Y",
+      "description": "Small Y is a lightweight YMCA Website Services installation designed for smaller associations with essential features and a streamlined setup."
+    },
+    {
       "id": "carnation-standard",
       "link": "https://sandbox-carnation-std.y.org/",
       "title": "Carnation: Standard install",
