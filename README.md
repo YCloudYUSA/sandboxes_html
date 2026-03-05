@@ -21,7 +21,7 @@ https://drive.google.com/drive/folders/1j40bjO1l7fD7M6w3QEEcgkkLHZB7N8hn?usp=sha
 Sandbox
 
 Welcome to the YMCA Website Services demo site! Compare the three themes currently offered on YMCA Website Services and discover the range of
-capabilities across different installation levels of the platform. 
+capabilities across different installation levels of the platform.
 ```
 
 ### Sandbox Domain Names
@@ -32,21 +32,15 @@ capabilities across different installation levels of the platform.
 - sandbox-carnation-ext.y.org
 - sandbox-carnation-std.y.org
 
-- sandbox-lily-cus.y.org
-- sandbox-lily-ext.y.org
-- sandbox-lily-std.y.org
-
-- sandbox-rose-cus.y.org
-- sandbox-rose-ext.y.org
-- sandbox-rose-std.y.org
+- sandbox-carnation-std-virtual-y.y.org
+- sandbox-carnation-std-membership-framework.y.org
+- sandbox-carnation-cus-d9.y.org
 
 ### Header
 
 The logo and "back to YMCA Website Services.org" point to https://ycloud.y.org/open-y-association-websites/.
 
-The logo is to be taken from openy.org. 
-
-The header is sticky for desktops.
+The logo is to be taken from openy.org.
 
 ### Fonts
 
@@ -68,15 +62,13 @@ The fonts are to be taken from Google fonts.
 
 # Development
 
-## Approach
+## Stack
 
-The responsive layout.
-
-The mobile first approach is to be used.
-
-The page is to be built with Bootstrap 4.
-
-Webpack is to be used to provide development environment and build production artifacts.
+- **Vite 6** — build tool and dev server
+- **TypeScript** — type-safe scripts
+- **Tailwind CSS v4** — utility-first styling
+- **Nunjucks** (via Vituum) — templating engine
+- **Playwright** — visual regression testing
 
 ## Usage
 
@@ -86,42 +78,45 @@ Project installation:
 
 To start local environment:
 
-`npm start`
+`npm run dev`
 
 To build production artifacts:
 
 `npm run build`
 
+To preview production build:
+
+`npm run preview`
+
 ## Project structure
 
-- `webpack.*.js` - the Webpack configuration files;
-- `src/` - contains all the source files for the project:
-   - `index.handlebars` - the root Handlebars file for building `index.html`;
-   - `main.scss` - the root SCSS file for building `main.css`;
-   - `data.json` - contains the page content;
-   - `assets/` - all the images used in the page;
-   - `partials/` - contains Handlebars component templates;
-   - `scss/` - contains SCSS modules.
+- `vite.config.ts` — Vite configuration with Vituum, Nunjucks, and Tailwind plugins
+- `tsconfig.json` — TypeScript configuration
+- `playwright.config.ts` — Playwright test configuration
+- `src/` — contains all the source files:
+   - `layouts/base.njk` — the base HTML layout (head, header, footer)
+   - `pages/index.njk` — the main page content
+   - `components/card.njk` — card component template
+   - `styles/main.css` — Tailwind CSS imports, theme config, and custom card styles
+   - `scripts/main.ts` — TypeScript entry point
+   - `data/global.json` — page content data (auto-loaded by Vituum)
+   - `assets/` — all images used in the page
+- `public/` — static assets served at root (favicon, og_image)
+- `tests/` — Playwright visual comparison tests
 
-### data.json
+### global.json
 
 The file describes all the content needed to build the static page.
 
 Structure:
 
-- `title` - the page title, used in meta tags;
-- `description` - the page description, used in meta tags, must not exceed 155 characters;
-- `url` - the URL where this page is hosted, used in meta tags;
-- `header` - the content header (see the wireframes);
-- `intro` - the intro text (see the wireframes), non-sanitized, can contain HTML markup;
-- `cards` - the array of card objects, used to build the markup for cards:
-  - `id` - the card id, used as a HTML `id` attribute, used in CSS;
-  - `link` - a link to a sandbox website, used in the "Preview" links;
-  - `title` - a card title, e.g "Rose: Standard install";
-  - `description` - a card body content, non-sanitized, can contain HTML markup.
-
-## TODOs
-
-- [NORMAL] improve IE11 rendering;
-- [MINOR] migrate to Gatsby;
-- [MINOR] automate removing of `main.js` from the build artifact `dist/index.html`.
+- `title` — the page title, used in meta tags
+- `description` — the page description, used in meta tags
+- `url` — the URL where this page is hosted, used in meta tags
+- `header` — the content header
+- `intro` — the intro text
+- `cards` — the array of card objects:
+  - `id` — the card id, used as HTML `id` attribute and in CSS for background images
+  - `link` — a link to a sandbox website
+  - `title` — a card title
+  - `description` — a card body content, non-sanitized, can contain HTML markup
