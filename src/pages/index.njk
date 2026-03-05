@@ -6,10 +6,14 @@
         <p class="mx-auto max-w-[730px] text-xs lg:text-sm mb-5 sm:mb-10 lg:mb-[60px]">{{ intro }}</p>
     </div>
 
-    <section class="grid grid-cols-1 sm:grid-cols-3 items-stretch gap-2.5 sm:gap-5 lg:gap-[30px] mb-2.5 sm:mb-5 lg:mb-[30px]">
-        <h2 class="sr-only">YMCA Website Services Sandboxes</h2>
-        {% for card in cards %}
-            {% include "components/card.njk" %}
-        {% endfor %}
+    {% for section in sections %}
+    <section class="mb-2.5 sm:mb-5 lg:mb-[30px]">
+        <h2 class="font-quicksand text-2xl lg:text-3xl font-normal mb-2.5 sm:mb-5 lg:mb-[20px]">{{ section.title }}</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 items-stretch gap-2.5 sm:gap-5 lg:gap-[30px]">
+            {% for card in section.cards %}
+                {% include "components/card.njk" %}
+            {% endfor %}
+        </div>
     </section>
+    {% endfor %}
 {% endblock %}

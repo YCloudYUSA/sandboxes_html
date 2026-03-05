@@ -5,48 +5,63 @@
   "url": "https://sandboxes.y.org/",
   "header": "Sandbox",
   "intro": "Welcome to the YMCA Website Services demo site! Compare the three distro variations currently offered on YMCA Website Services and discover the range of capabilities across different installation levels of the platform.",
-  "cards": [
+  "sections": [
     {
-      "id": "small-y",
-      "link": "https://small-y-stable.y.org/",
-      "title": "Small Y",
-      "description": "Small Y is a lightweight YMCA Website Services installation designed for smaller associations with essential features and a streamlined setup."
+      "title": "Featured Sandboxes",
+      "cards": [
+        {
+          "id": "small-y",
+          "link": "https://small-y-stable.y.org/",
+          "title": "Small Y",
+          "description": "Small Y is a lightweight YMCA Website Services installation designed for smaller associations with essential features and a streamlined setup."
+        },
+        {
+          "id": "membership-builder",
+          "link": "https://sandbox-carnation-std-membership-framework.y.org/membership-builder",
+          "title": "Membership Builder",
+          "description": "Membership Builder provides a guided membership sign-up experience with customizable packages, pricing, and add-ons for YMCA associations."
+        },
+        {
+          "id": "activity-finder",
+          "link": "https://sandbox-carnation-cus-d9.y.org/",
+          "title": "Activity Finder",
+          "description": "Activity Finder helps members search and register for programs, classes, and activities across YMCA locations with advanced filtering and scheduling."
+        }
+      ]
     },
     {
-      "id": "carnation-standard",
-      "link": "https://sandbox-carnation-std.y.org/",
-      "title": "Carnation: Standard install",
-      "description": "Standard-level YMCA Website Services offers everything a YMCA Association needs for a comprehensive website. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
+      "title": "Carnation Theme",
+      "cards": [
+        {
+          "id": "carnation-standard",
+          "link": "https://sandbox-carnation-std.y.org/",
+          "title": "Carnation: Standard install",
+          "description": "Standard-level YMCA Website Services offers everything a YMCA Association needs for a comprehensive website. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
+        },
+        {
+          "id": "carnation-extended",
+          "link": "https://sandbox-carnation-ext.y.org/",
+          "title": "Carnation: Extended install",
+          "description": "Extended-level YMCA Website Services is an option for large YMCA Associations who desire deep integrations with third party software and advanced features. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
+        },
+        {
+          "id": "carnation-custom",
+          "link": "https://sandbox-carnation-cus.y.org/",
+          "title": "Carnation: Custom install",
+          "description": "Custom-level YMCA Website Services is for developers to review all possible features, including experimental ones, available in YMCA Website Services.. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
+        }
+      ]
     },
     {
-      "id": "carnation-extended",
-      "link": "https://sandbox-carnation-ext.y.org/",
-      "title": "Carnation: Extended install",
-      "description": "Extended-level YMCA Website Services is an option for large YMCA Associations who desire deep integrations with third party software and advanced features. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
-    },
-    {
-      "id": "carnation-custom",
-      "link": "https://sandbox-carnation-cus.y.org/",
-      "title": "Carnation: Custom install",
-      "description": "Custom-level YMCA Website Services is for developers to review all possible features, including experimental ones, available in YMCA Website Services.. Carnation offers image-rich page layouts and simple, mobile-optimized menus."
-    },
-    {
-      "id": "virtual-y",
-      "link": "https://sandbox-carnation-std-virtual-y.y.org/",
       "title": "Virtual Y",
-      "description": "Virtual Y extends YMCA Website Services with virtual content delivery, allowing members to access classes, videos, and resources online from anywhere."
-    },
-    {
-      "id": "membership-builder",
-      "link": "https://sandbox-carnation-std-membership-framework.y.org/membership-builder",
-      "title": "Membership Builder",
-      "description": "Membership Builder provides a guided membership sign-up experience with customizable packages, pricing, and add-ons for YMCA associations."
-    },
-    {
-      "id": "activity-finder",
-      "link": "https://sandbox-carnation-cus-d9.y.org/",
-      "title": "Activity Finder",
-      "description": "Activity Finder helps members search and register for programs, classes, and activities across YMCA locations with advanced filtering and scheduling."
+      "cards": [
+        {
+          "id": "virtual-y",
+          "link": "https://sandbox-carnation-std-virtual-y.y.org/",
+          "title": "Virtual Y",
+          "description": "Virtual Y extends YMCA Website Services with virtual content delivery, allowing members to access classes, videos, and resources online from anywhere."
+        }
+      ]
     }
   ]
 }
