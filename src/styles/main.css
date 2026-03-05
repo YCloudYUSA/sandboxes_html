@@ -100,8 +100,8 @@ body.ready .sandbox-card-header::after {
 #virtual-y .sandbox-card-header::after            { background-image: url('../assets/carnation-standard-700x350.jpg'); }
 #membership-builder .sandbox-card-header::before  { background-image: url('../assets/membership-builder-20.jpg'); }
 #membership-builder .sandbox-card-header::after   { background-image: url('../assets/membership-builder-700x350.jpg'); }
-#activity-finder .sandbox-card-header::before     { background-image: url('../assets/carnation-custom-20.jpg'); }
-#activity-finder .sandbox-card-header::after      { background-image: url('../assets/carnation-custom-700x350.jpg'); }
+#activity-finder .sandbox-card-header::before     { background-image: url('../assets/activity-finder-20.jpg'); }
+#activity-finder .sandbox-card-header::after      { background-image: url('../assets/activity-finder-700x350.jpg'); }
 
 /* Preview button */
 .sandbox-card-preview {
