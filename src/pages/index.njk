@@ -1,0 +1,15 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <div class="text-center leading-relaxed mt-5 sm:mt-10 lg:mt-16">
+        <h1 class="font-quicksand text-5xl lg:text-[60px] font-normal leading-relaxed mb-2.5 transition-[font-size] duration-150">{{ header }}</h1>
+        <p class="mx-auto max-w-[730px] text-xs lg:text-sm mb-5 sm:mb-10 lg:mb-[60px]">{{ intro }}</p>
+    </div>
+
+    <section class="grid grid-cols-1 sm:grid-cols-3 items-stretch gap-2.5 sm:gap-5 lg:gap-[30px] mb-2.5 sm:mb-5 lg:mb-[30px]">
+        <h2 class="sr-only">YMCA Website Services Sandboxes</h2>
+        {% for card in cards %}
+            {% include "components/card.njk" %}
+        {% endfor %}
+    </section>
+{% endblock %}
