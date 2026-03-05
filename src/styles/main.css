@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@source "../layouts";
+@source "../pages";
+@source "../components";
+
+@theme {
+  --color-brand-red: #F41938;
+  --color-brand-red-dimmed: #D0343A;
+  --color-brand-light-grey: #F2F2F2;
+  --default-font-family: 'Roboto', sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+  --breakpoint-sm: 576px;
+  --breakpoint-lg: 992px;
+}
+
+
+/* Card component */
+.sandbox-card {
+  display: block;
+  position: relative;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .sandbox-card {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .sandbox-card:hover,
+  .sandbox-card:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+  }
+}
+
+/* Card header with lazy-load image animation */
+.sandbox-card-header {
+  height: 0;
+  position: relative;
+  padding-bottom: 50%;
+  overflow: hidden;
+  border-top: 5px solid var(--color-brand-red);
+  text-decoration: none;
+}
+
+.sandbox-card-header::before,
+.sandbox-card-header::after {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.15);
+  filter: opacity(0) blur(10px);
+  transition: filter 250ms;
+}
+
+.sandbox-card-header::before {
+  filter: opacity(1) blur(0);
+}
+
+body.ready .sandbox-card-header::after {
+  filter: opacity(1) blur(0);
+}
+
+/* Per-card background images — low-res placeholders (::before) and full images (::after) */
+#carnation-standard .sandbox-card-header::before { background-image: url('../assets/carnation-standard-20.jpg'); }
+#carnation-extended .sandbox-card-header::before { background-image: url('../assets/carnation-extended-20.jpg'); }
+#carnation-custom .sandbox-card-header::before   { background-image: url('../assets/carnation-custom-20.jpg'); }
+
+#rose-standard .sandbox-card-header::before { background-image: url('../assets/rose-standard-20.jpg'); }
+#rose-extended .sandbox-card-header::before { background-image: url('../assets/rose-extended-20.jpg'); }
+#rose-custom .sandbox-card-header::before   { background-image: url('../assets/rose-custom-20.jpg'); }
+
+#lily-standard .sandbox-card-header::before { background-image: url('../assets/lily-standard-20.jpg'); }
+#lily-extended .sandbox-card-header::before { background-image: url('../assets/lily-extended-20.jpg'); }
+#lily-custom .sandbox-card-header::before   { background-image: url('../assets/lily-custom-20.jpg'); }
+
+#carnation-standard .sandbox-card-header::after { background-image: url('../assets/carnation-standard-700x350.jpg'); }
+#carnation-extended .sandbox-card-header::after { background-image: url('../assets/carnation-extended-700x350.jpg'); }
+#carnation-custom .sandbox-card-header::after   { background-image: url('../assets/carnation-custom-700x350.jpg'); }
+
+#rose-standard .sandbox-card-header::after { background-image: url('../assets/rose-standard-700x350.jpg'); }
+#rose-extended .sandbox-card-header::after { background-image: url('../assets/rose-extended-700x350.jpg'); }
+#rose-custom .sandbox-card-header::after   { background-image: url('../assets/rose-custom-700x350.jpg'); }
+
+#lily-standard .sandbox-card-header::after { background-image: url('../assets/lily-standard-700x350.jpg'); }
+#lily-extended .sandbox-card-header::after { background-image: url('../assets/lily-extended-700x350.jpg'); }
+#lily-custom .sandbox-card-header::after   { background-image: url('../assets/lily-custom-700x350.jpg'); }
+
+#virtual-y .sandbox-card-header::before           { background-image: url('../assets/carnation-standard-20.jpg'); }
+#virtual-y .sandbox-card-header::after            { background-image: url('../assets/carnation-standard-700x350.jpg'); }
+#membership-builder .sandbox-card-header::before  { background-image: url('../assets/membership-builder-20.jpg'); }
+#membership-builder .sandbox-card-header::after   { background-image: url('../assets/membership-builder-700x350.jpg'); }
+#activity-finder .sandbox-card-header::before     { background-image: url('../assets/carnation-custom-20.jpg'); }
+#activity-finder .sandbox-card-header::after      { background-image: url('../assets/carnation-custom-700x350.jpg'); }
+
+/* Preview button */
+.sandbox-card-preview {
+  background-color: var(--color-brand-red-dimmed);
+  color: white;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-quicksand);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  transition: background-color 150ms, font-size 150ms;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .sandbox-card-preview {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+@media (min-width: 992px) {
+  .sandbox-card-preview {
+    font-size: 18px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+.sandbox-card:hover .sandbox-card-preview,
+.sandbox-card:focus .sandbox-card-preview {
+  background-color: var(--color-brand-red);
+}
+
+/* External link icon */
+.external-icon {
+  display: inline-block;
+}
+
+.external-icon::after {
+  background: url('../assets/external-link.svg') no-repeat center center;
+  background-size: contain;
+  content: "";
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  height: 14px;
+  width: 14px;
+  transform: translateX(3px) translateY(2px) scale(1.2857);
+}
+
+@media (min-width: 992px) {
+  .external-icon::after {
+    transform: translateX(8px) translateY(0) scale(1.2857);
+  }
+}

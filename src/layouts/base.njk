@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ gtmid }}');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="{{ title }}">
+    <meta name="description" content="{{ description }}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:image" content="{{ url }}og_image.jpg">
+    <meta property="og:description" content="{{ description }}">
+
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500%7CRoboto:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/main.css">
+
+    <title>{{ title }}</title>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtmid }}"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header id="header" class="w-full">
+        <nav class="h-[50px] lg:h-[100px] bg-black px-[5px] sm:px-0 pr-5 sm:pr-0 relative transition-[height] duration-150">
+            <div class="mx-auto max-w-[1200px] px-[5px] sm:px-[35px] lg:px-[45px] h-full flex items-center">
+                <a class="navbar-brand bg-contain bg-no-repeat text-[0px] leading-[0] pt-[25px] lg:pt-[50px] overflow-hidden absolute indent-[-9999px] w-[85px] lg:w-[169px] top-1/2 -translate-y-1/2"
+                   href="https://ycloud.y.org/open-y-association-websites/"
+                   title="YMCA Website Services">YMCA Website Services</a>
+                <a class="ml-auto text-brand-red hover:text-white font-quicksand text-xs lg:text-sm font-medium -translate-y-[5px] lg:translate-y-0 transition-colors duration-150"
+                   href="https://ycloud.y.org/open-y-association-websites/"
+                   title="YMCA Website Services">
+                    Back to YMCA Website Services.org
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mx-auto max-w-[1200px] px-[5px] sm:px-[35px] lg:px-[45px] flex-1">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="bg-black text-white text-center text-xs lg:text-sm py-3 transition-[font-size] duration-150">
+            <div class="mx-auto max-w-[1200px] px-[5px] sm:px-[35px] lg:px-[45px]">
+                &copy; 2025 YMCA Website Services. All Rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/scripts/main.ts"></script>
+</body>
+</html>

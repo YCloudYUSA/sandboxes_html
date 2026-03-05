@@ -1,0 +1,10 @@
+<div class="flex">
+    <a class="sandbox-card" id="{{ card.id }}" href="{{ card.link }}" title="Preview {{ card.title }}" target="{{ card.id }}">
+        <header class="sandbox-card-header"></header>
+        <article class="px-[5px] sm:px-2.5 lg:px-[15px] sm:mb-[65px] lg:mb-[75px]">
+            <h2 class="text-black text-lg lg:text-2xl font-normal leading-relaxed my-[5px] sm:my-2.5 lg:my-[15px] transition-[margin,font-size] duration-150">{{ card.title }}</h2>
+            <p class="text-xs lg:text-sm leading-relaxed mb-[5px] sm:mb-2.5 lg:mb-[15px] transition-[margin-bottom] duration-150">{{ card.description | safe }}</p>
+        </article>
+        <div class="sandbox-card-preview">Preview <i class="external-icon"></i></div>
+    </a>
+</div>
